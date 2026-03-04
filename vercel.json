@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend-main/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "backend-main/manage.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend-main/FINALYEARPROJECT/asgi.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend-main/$1"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "FINALYEARPROJECT.settings"
+  }
+}

@@ -1,0 +1,112 @@
+.login-main {
+	background-color: white;
+	width: calc(100vw - 40px);
+	height: calc(100vh - 40px);
+	overflow: hidden;
+	margin: 20px;
+}
+
+.login-main .section-2 {
+	margin-top: -30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	place-items: center;
+}
+.left-section {
+	width: 600px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.right-section {
+	height: max-content;
+	width: 500px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	min-height:300px;
+}
+
+.login-form {
+	margin: 20px;
+}
+
+.signup-form {
+	margin: 20px;
+}
+
+.right-section .tabs-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.right-section .tabs-buttons button {
+	height: 40px;
+	font-size: 20px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #eee;
+}
+
+.active-tab {
+	background-color: #1890ff;
+	color: #fff;
+	border-color: #1890ff;
+}
+
+.inp {
+	height: 40px;
+}
+
+.login-form .btn,
+.signup-form .btn,
+.centerbtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.login-form .btn button,
+.signup-form .btn button,
+.centerbtn button {
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+}
+
+.logo {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media (max-width: 600px) {
+	.login-main .section-2 {
+		margin-top: -30px;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0px;
+		place-items: center;
+	}
+	.left-section {
+		width: calc(100vw);
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.right-section {
+		height: max-content;
+		width: calc(100vw - 50px);
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+	}
+  .login-main {
+      background-color: white;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+      margin: 0px;
+    }
+}

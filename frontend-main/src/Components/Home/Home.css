@@ -1,0 +1,275 @@
+.admin-main {
+	margin: 20px;
+	min-height: calc(100vh - 200px);
+}
+.admin-main .ant-tabs {
+	background-color: white;
+	padding: 24px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.admin-main .ant-tabs-tab {
+	padding: 10px 20px;
+	font-weight: 600;
+}
+.admin-main .ant-tabs-tab-active .ant-tabs-tab-btn {
+	color: var(--color-primary, #0056b3) !important;
+}
+.admin-problem-mgmt .ant-table {
+	font-size: 14px;
+}
+.admin-problem-mgmt .ant-table-thead > tr > th {
+	background: #fafafa;
+	font-weight: 600;
+}
+
+.user-main .ant-tabs-top > .ant-tabs-nav::before {
+	border: none !important;
+}
+
+.user-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-main .ant-tabs {
+	margin: 20px;
+	width: 60vw;
+	min-height: calc(100vh - 200px);
+	background-color: white;
+	padding: 40px;
+	border-radius: 15px;
+}
+
+.user-main .ant-tabs-tab {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	padding: 10px 20px;
+	font-size: 18px;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 2px;
+	height: 50px;
+	background-color: #ddd;
+}
+
+.user-main .ant-tabs-tab-active {
+	font-size: 18px;
+	background-color: var(--color-primary);
+	font-weight: 600;
+	border-bottom: none !important;
+}
+
+.user-main .ant-tabs-tab-active .ant-tabs-tab-btn {
+	color: white !important;
+}
+
+/* 
+.user-main .ant-tabs-nav-list{
+    width: 100% !important; 
+    justify-content: space-between !important;
+    
+} */
+
+.outlet-main {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px;
+	margin: 20px;
+    justify-content: center;
+}
+.dashboard-content{
+    display: flex;
+    position:relative;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.outlet-item {
+	border: 1px solid #ccc;
+	width: 150px;
+    height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.outlet-item img{
+	width: 48px;
+	opacity: 0.3;
+	margin: 0px;
+}
+.outlet-item p{
+	margin: 0px;
+	text-transform: capitalize;
+	font-weight:500;
+}
+
+.add-outlet-btn{
+    border: 1px solid #ccc;
+	width: 150px;
+    height: 70px;
+}
+
+.add-outlet-btn:hover{
+    border: 1px solid #ccc;
+	color: white;
+	background-color: var(--color-primary);
+}
+
+.outlet-item:hover {
+	border: 1px solid #ccc;
+	color: white;
+	justify-content: center;
+	width: 150px;
+	background-color: var(--color-primary);
+}
+
+.outlet-main button:hover {
+	border: 1px solid #ccc;
+	color: white;
+	justify-content: center;
+	width: 150px;
+	background-color: var(--color-primary);
+}
+
+.registeration-form {
+	width: 500px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding-bottom: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.registeration-form h3 {
+	background-color: var(--color-primary);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.registeration-form .form-container {
+	margin: 30px;
+}
+
+.registeration-form .form-container input {
+	height: 40px;
+	width: calc(100% - 50px);
+	background-color: #eee;
+}
+
+.registeration-form .form-container .ant-upload {
+	height: 40px;
+	width: calc(100% - 50px);
+	background-color: #eee;
+}
+
+.registeration-form .form-container button {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40px;
+	background-color: var(--color-primary);
+	padding: 10px 20px;
+}
+
+.registeration-form .form-container .ant-upload button {
+	height: 40px;
+	width: 100%;
+	background-color: #eee;
+}
+
+.outlet-form .form-container button {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40px;
+	background-color: var(--color-primary);
+	padding:5px 20px;
+    font-size: 18px;
+}
+
+.outlet-form .form-container input {
+	height: 40px;
+	width: calc(100% - 50px);
+	background-color: #eee;
+}
+
+.organization-details{
+    width: 60vw;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.organization-details img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -120px;
+    border: 2px solid black;
+}
+
+.organization-details .org-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.organization-details .org-details h3{
+    margin: 5px;
+}
+
+.org-outlets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+}
+
+.org-outlets div{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 600px) {
+	.registeration-form {
+		width: calc(100vw - 50px);
+		position: relative;
+	}
+	.registeration-form .form-container input {
+		height: 40px;
+		width: calc(100%);
+		background-color: #eee;
+	}
+
+	.registeration-form .form-container .ant-upload {
+		height: 40px;
+		width: calc(100%);
+		background-color: #eee;
+	}
+}
