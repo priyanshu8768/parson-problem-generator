@@ -49,7 +49,7 @@
    - Select same repository
    - Set root directory to `backend-main`
    - Framework preset: "Python"
-   - Build command: `pip install -r requirements.txt`
+   - Build command: `pip install --break-system-packages -r requirements.txt`
    - Output directory: `.`
    - Add environment variables from your `.env` file
 
